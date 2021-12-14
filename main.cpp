@@ -694,13 +694,15 @@ int main()
             if(result == GAME_OVER) {
                 uLCD.cls();
                 uLCD.printf("GAME OVER");
-                exit(1);
+                run_once_snake = true;
+                wait(5);
             }
             
             if(snake.length >= SNAKE_MAX_LENGTH) {
                 uLCD.cls();
                 uLCD.printf("YOU WIN");
-                exit(1);
+                run_once_snake = true;
+                wait(5);
             }
                     
             // 4. Draw screen
@@ -723,11 +725,6 @@ int main()
             // this portion should only run once
             if(run_once_math)
             {
-                button1.mode(PullUp);
-                button2.mode(PullUp);
-                button3.mode(PullUp);
-                button4.mode(PullUp);
-                button5.mode(PullUp);
                 uLCD.cls();
                 bool randomGen = true;
                 t1.start();
