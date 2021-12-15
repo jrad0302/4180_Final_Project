@@ -26,6 +26,9 @@ https://youtu.be/-_NwCmx6EHU
 |      IRQ      |      p26      |
 |      Gnd      |      Gnd      |
 
+Warning!
+The required I2C pullups on SDA and SCL are not provided on the touch keypad board, so add two 4.7K ohm pullups from the SDA and SCL (I2C signal lines) to 3.3V to the circuit. The other breakout board with the MPR121 only, has the pullups on the board. Without pullups, the I2C APIs will hang. Some I2C breakout boards have the pullup resistors on the board, but this one does not. In general, when using a new I2C board you would need to double check the schematic and look for the pullups. When several I2C boards are connected on a single I2C bus, they should only have one set of pullups.
+
 
 |  Adafruit BLE |      mbed     |
 | ------------- | ------------- |
