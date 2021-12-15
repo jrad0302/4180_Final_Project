@@ -14,5 +14,42 @@ The user initially has 30 seconds to answer, but with every subsequent correct a
 # Demo
 https://youtu.be/-_NwCmx6EHU
 
-# Photo of circuitry
+# Photo of Circuitry
 ![IMG_2482](https://user-images.githubusercontent.com/96077867/146098311-afe2a833-7f93-4d71-95b2-a05a14a9faa4.jpg)
+
+# Wiring
+|    MPR 121    |      mbed     |
+| ------------- | ------------- |
+|      Vcc      |   Vout(3.3V)  |
+|      SDA      |      p9       |
+|      SCL      |      p10      |
+|      IRQ      |      p26      |
+|      Gnd      |      Gnd      |
+
+
+|  Adafruit BLE |      mbed     |
+| ------------- | ------------- |
+| Vin (3.3-16V) |     Vu(5V)    |
+|      RTS      |      nc       |
+|      CTS      |      Gnd      |
+|      TXO      |      p27      |
+|      RXI      |      p28      |
+|      Gnd      |      Gnd      |
+
+
+|  uLCD Header  |   uLCD Cable  |      mbed     |
+| ------------- | ------------- | ------------- |
+|      +5V      |      +5V      |     Vu(5V)    |
+|      RX       |      TX       |      p13      |
+|      TX       |      RX       |      p14      |
+|     Reset     |     Reset     |      p11      |
+|      Gnd      |      Gnd      |      Gnd      |
+
+
+|   Button #    |      mbed     |
+| ------------- | ------------- |
+|       1       |      p21      |
+|       2       |      p22      |
+|       3       |      p23      |
+|       4       |      p24      |
+|       5       |      p25      |
