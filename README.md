@@ -13,3 +13,6 @@ The user initially has 30 seconds to answer, but with every subsequent correct a
 
 # Demo
 https://youtu.be/-_NwCmx6EHU
+
+# Photo of circuitry
+![IMG_2482](https://user-images.githubusercontent.com/96077867/146098311-afe2a833-7f93-4d71-95b2-a05a14a9faa4.jpg)
